@@ -38,3 +38,7 @@ final 用于定义常量，常量不可改变（可以定义时赋值，或者�
 数组集合ArrayList
 - 数组大小不可改变，不可以动态增删元素
 - ArrayList<Integer> list = new ArrayList<>
+
+
+输入输出流: 需要用的时候再单独看
+
