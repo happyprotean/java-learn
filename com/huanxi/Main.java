@@ -1,20 +1,19 @@
 package com.huanxi;
-import java.lang.reflect.Field;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
         Class<?> cls1 = Class.forName("com.huanxi.Person");
-
-        Field[] fields = cls1.getFields();
-        for (Field field : fields) {
-            System.out.println(field);
+        Constructor[] constructors = cls1.getConstructors();
+        for (Constructor constructor : constructors) {
+            System.out.println(constructor);
         }
 
-        Field idField = cls1.getField("id");
-        Person person = new Person();
-        Object oldValue = idField.get(person);
-        System.out.println(oldValue);
-        idField.set(person, 123);
-        System.out.println(person);
+        Method[] methods = cls1.getMethods();
+        for (Method method : methods) {
+            System.out.println(method);
+        }
     }
 }
