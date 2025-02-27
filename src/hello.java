@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Hello {
     public static void main(String[] args) {
         // 换行输出
-        System.out.println("Hello World");
+        System.out.println("src.Hello World");
         int[] arr = new int[10];
         arr[0] = 1;
         System.out.println(Arrays.toString(arr));
@@ -19,6 +19,6 @@ class Hello {
   */
  class HelloHuanxi {
     public static void main(String[] args) {
-        System.out.println("Hello Huanxi");
+        System.out.println("src.Hello Huanxi");
     }
  }

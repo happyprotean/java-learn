@@ -65,4 +65,7 @@ final 用于定义常量，常量不可改变（可以定义时赋值，或者�
 
 @Deprecated 一般用在方法之前，表示该方法已经过期，不建议再继续使用
 
+## JDBC（Java Database Connectivity）
+Java数据库连接
+
 
